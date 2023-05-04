@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+.sec{
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 20px 100px 50px 20px;
+    background-color:#F3F7FF;
+}
+.float-end{
+    display: flex;
+    gap: 20px;  
+}
+.button{
+    border-radius: 29px;
+    padding: 5px 15px;
+    background-color: #17BAD1;
+    border: 1px solid #17BAD1;
+    color: #ffffff;
+}
+.button:hover{
+    background-color: blue;
+    border: 1px solid blue;
+}
+.d-flex{
+    padding: 50px 200px 50px 50px;
+    gap: 40px;
+}
+.cal{
+    text-align: center;
+}
+h4{
+    color: #0DCAF0;
+}
+.cal button{
+    border-radius: 20px;
+    padding: 10px;
+    background-color:#0DCAF0;
+    border: 1px solid #0DCAF0;
+}
+section{
+    background-color:#F3F7FF ;
+}
+.card-body{
+    text-align: center;
+}
+.card-body h5{
+    color: #308754;
+}
+.text-end{
+    padding: 0 110px;
+}
+.animation{
+    background-image: url(image/ilustrasion-scene.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    width: 100%;
+}
+.sala{
+    position: absolute;
+    top: 200px;
+    animation-name: mi;
+    animation-duration:6s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+@keyframes mi{
+    from{
+        transform: translatex(-100%);
+    }
+    to{
+        transform: translatex(105%);
+    }
+}
+.ude{
+    position: absolute;
+    top: 200px;
+    animation-name: mine;
+    animation-duration:12s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    z-index: 3;
+}
+@keyframes mine{
+    from{
+        transform: translatex(-100%);
+    }
+    to{
+        transform: translatex(105%);
+    }
+}
+.deen{
+    position: absolute;
+    top: 200px;
+    animation-name: min;
+    animation-duration:15s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    z-index: 4;
+}
+@keyframes min{
+    from{
+        transform: translatex(100%);
+    }
+    to{
+        transform: translatex(-105%);
+    }
+}
+
+.backImg1{
+    background: url(/image/banner.png) cover top;
+    background: url(image/back-use.jpg) bottom;
+
+}
+@media screen and (max-width: 900px){
+    .float-end{
+        display: block;
+    } 
+}
